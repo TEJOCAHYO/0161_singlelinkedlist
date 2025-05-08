@@ -148,6 +148,20 @@ int main()
                     break;     
                 }
                 cout << endl
+                     << "\nmasukan no mahasiswa yang akan dihapus : ";
+                cin >> nim;
+                if (mhs.delNode(nim) == false)
+                    cout << endl
+                         << "data tidak ditemukan" endl;
+                else
+                    cout << endl
+                         << "data dengan nomor mahasiswa" << nim << "berhasil dihapus" << endl;
+
+            }
+            break;
+            case '3':
+            {
+                mhs.travense();
             }
         }
     }
