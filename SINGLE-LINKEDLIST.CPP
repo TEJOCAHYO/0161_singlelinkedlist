@@ -163,6 +163,41 @@ int main()
             {
                 mhs.travense();
             }
+            break;
+            case '4':
+            {
+                if (mhs.listEmpty() == true)
+                {
+                    cout << "\nlist kosong\n";
+                    break;
+
+                }
+                node *previous, *current;
+                cout << endl
+                     << "masukan nomor mahasiswa yang di cari : ";
+                cin >> nim;
+                if (mhs.Search(nim, &previous, &current ) == false)
+                    cout << endll
+                         << "data tidak ditemukan" << endl
+                else
+                {
+                    cout << endl
+                         << "data tidak ditemukan" << endl;
+                    cout << "\nNo mahasiswa: " << current-> noMhs << endl;
+                    cout << "\n"
+                }
+            }
+            break;
+            case '5' :
+            {
+                exit(0);
+            }
+            break;
+            default;
+            {
+                cout << "pilihan salah !. " << endl;
+            }
+            break;
         }
     }
 }
